@@ -4,9 +4,11 @@ public class Addition {
   public int num3;
 
   public Addition(int num1, int num2, int num3) {
+
     this.num1 = num1;
     this.num2 = num2;
     this.num3 = num3;
+
   }
 
   public int getSum() {
