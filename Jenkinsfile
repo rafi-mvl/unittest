@@ -38,6 +38,12 @@ pipeline {
         }
     }
 
+    stage ('Email') {
+             steps {
+                 emailext body: 'Build is completed', replyTo: 'basil1987@gmail.com', subject: 'Build is completed', to: 'basil1987@gmail.com'
+        }
+    }
+
   }
 
 }
